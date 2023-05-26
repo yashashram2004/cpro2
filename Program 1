@@ -1,0 +1,59 @@
+#include<stdio.h>
+
+main()
+
+{
+
+	char a[]="I am student@degree-clg";	int i=0,lc=0,sc=0;
+
+	while(a[i++]!='\0')
+
+	{
+
+		if(a[i]>='a'&&a[i]<='z')
+
+		lc++;
+
+		else if(a[i]>='A'&&a[i<='Z']);
+
+		else
+
+		sc++;
+
+	}
+
+	printf("lower case letters are %d",lc);
+
+	printf("\nspl chars are %d",sc);
+
+}
+
+[26/05, 7:50 AM] Uday: #include<stdio.h>
+
+main()
+
+{
+
+	char a[100];
+
+	int len=0,i;
+
+	printf("enter any string\n");
+
+	gets(a);
+
+	while(a[i++]!='\0')
+
+	len++;
+
+	printf("entered string:");
+
+	puts(a);
+
+	printf("reversed string:");
+
+	for(i=len;i>=0;i--)
+
+	putch(a[i]);
+
+}
